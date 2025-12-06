@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Análisis de Mejoras - NAIS BY CAN</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #d63384; border-bottom: 2px solid #d63384; padding-bottom: 10px; }
+        h2 { color: #444; margin-top: 30px; }
+        .tag { background: #eee; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-weight: bold; }
+        .free { color: green; font-weight: bold; }
+        .paid { color: orange; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Posibles Mejoras y Herramientas Laravel</h1>
+    <p>Análisis técnico para escalar el proyecto "NAIS BY CAN".</p>
+
+    <h2>1. Agenda y Notificaciones</h2>
+    <ul>
+        <li><strong>FullCalendar.js:</strong> <span class="free">Gratis</span>. Reemplazar la grilla simple HTML por esta librería JS robusta para arrastrar y soltar turnos en el admin.</li>
+        <li><strong>WhatsApp Business API:</strong> <span class="paid">Pago</span>. En lugar de abrir el chat del cliente (que requiere que el cliente envíe), usar la API (vía Twilio o Meta) para enviar recordatorios automáticos 24hs antes.</li>
+        <li><strong>Laravel Notifications:</strong> Sistema nativo de Laravel para enviar emails de confirmación de turno automáticamente al guardar en la base de datos.</li>
+    </ul>
+
+    <h2>2. Pagos y Caja</h2>
+    <ul>
+        <li><strong>MercadoPago SDK / Stripe:</strong> <span class="free">Comisión por venta</span>. Permitir que el cliente pague una seña o el total directamente en el formulario de reserva para reducir el ausentismo ("No show").</li>
+        <li><strong>Laravel Daily / Laravel Charts:</strong> <span class="free">Gratis</span>. Librerías para generar gráficos visuales de ingresos en el Dashboard (Torta de Efectivo vs Digital, Barras de ingresos mensuales).</li>
+    </ul>
+
+    <h2>3. Gestión de Archivos y Reportes</h2>
+    <ul>
+        <li><strong>Maatwebsite/Laravel-Excel:</strong> <span class="free">Gratis</span>. La mejor librería para exportar la tabla de "Caja" a Excel (.xlsx) con un solo click, estilizado y profesional.</li>
+        <li><strong>DomPDF:</strong> <span class="free">Gratis</span>. Para generar los tickets de la caja en formato PDF listos para imprimir en impresoras térmicas de 80mm o 58mm.</li>
+    </ul>
+
+    <h2>4. Arquitectura y Seguridad</h2>
+    <ul>
+        <li><strong>Laravel Livewire:</strong> <span class="free">Gratis</span>. Permite hacer el calendario y los filtros de la caja dinámicos (SPA - Single Page Application feel) sin escribir JavaScript complejo, todo desde PHP.</li>
+        <li><strong>Spatie/Laravel-Permission:</strong> <span class="free">Gratis</span>. Si el negocio crece y hay empleados, permite crear roles (Dueña vs Empleada) para que la empleada solo vea la Agenda y no la Caja.</li>
+        <li><strong>Laravel Backup:</strong> <span class="free">Gratis</span>. Genera copias de seguridad de la base de datos MySQL y las envía a un Google Drive o correo automáticamente cada noche.</li>
+    </ul>
+
+</body>
+</html>
